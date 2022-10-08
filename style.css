@@ -84,7 +84,6 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
     width: 100%;
     height: 500px;
     color: whitesmoke;
@@ -107,7 +106,6 @@ nav ul li a {
 
 .contacts ul li a {
     text-decoration: none;
-    list-style: none;
 }
 
 .contacts ul {
@@ -118,6 +116,7 @@ nav ul li a {
     justify-content: center;
     text-align: center;
     padding: 100px;
+    list-style-type: none;
 }
 
 .text {
