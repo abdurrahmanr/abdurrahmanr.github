@@ -92,6 +92,7 @@ nav ul li a {
 .about p {
     text-align: justify;
     padding: 25px 0;
+    line-height: 30px;
 }
 
 .contacts {
