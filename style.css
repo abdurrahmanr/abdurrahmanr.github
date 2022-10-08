@@ -6,7 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+body, html {
+    position: relative;
     background-color: #010B19;
     overflow-x: hidden;
 }
