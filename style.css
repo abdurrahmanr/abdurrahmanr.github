@@ -215,10 +215,11 @@ h1 {
 
     nav {
         margin-left: 0px;
+        justify-content:space-evenly;
     }
 
     .logo a img {
-        padding-left: 110px;
+        margin-right: 200px;
     }
 
     .nav-mobile span {
