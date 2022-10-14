@@ -158,6 +158,7 @@ h1 {
     height: 20px;
     justify-content: space-between;
     position: relative;
+    direction: rtl;
 }
 
 .nav-mobile span {
@@ -167,6 +168,15 @@ h1 {
     background-color: whitesmoke;
     border-radius: 10px;
     transition: all 0.5s;
+}
+
+.nav-mobile #line2 {
+    width: 19px;
+}
+
+.nav-mobile #line3 {
+    width: 10px;
+    height: 4px;
 }
 
 .nav-mobile input {
@@ -192,9 +202,15 @@ h1 {
     transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.nav-mobile input:checked ~ span:nth-child(4){
+.nav-mobile input:checked ~ #line3{
     transform: rotate(-45deg) translate(-1px, -1px);
+    width: 28px;
+    height: 3px;
 }
+
+/* .nav-mobile input:checked ~ #line3 {
+    width: 28px;
+} */
 
 .nav-mobile input:checked ~ span:nth-child(3){
     transform: scale(0);
