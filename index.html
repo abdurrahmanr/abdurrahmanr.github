@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>I Man</title>
-    <link rel="shortcut icon" href="/src/img/Logo White.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/img/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
   <nav>
     <div class="logo">
-      <a href="#home"><img src="/src/img/Logo White.png" alt=""></a>
+      <a href="#home"><img src="/src/img/logo.webp" alt=""></a>
     </div>
 
     <ul>
       <li>
-        <a href="#home" id="list">Home</a>
+        <a class="active" href="#home">Home</a>
       </li>
       <li>
-        <a href="#about" id="list">About</a>
+        <a class="" href="#about">About</a>
       </li>
       <li>
-        <a href="#contacts" id="list">Contacts</a>
+        <a class="" href="#projects">Projects</a>
+      </li>
+      <li>
+        <a class="" href="#contacts">Contacts</a>
       </li>
     </ul>
     
@@ -35,26 +38,47 @@
     </div>
 
   </nav>
+
+  <!-- home -->
   <section class="home" id="home">
-    <img src="/src/img/profile.png" alt="">
+    <img src="/src/img/profile.webp" alt="">
     <div class="textintro">
       <p class="intro1">I am</p>
       <p class="intro2">Abdurrahman Rahim</p>
       <p class="intro3">College Student</p>
     </div>
   </section>
+
+  <!-- about -->
   <section class="about" id="about">
     <div class="text">
       <h1>About</h1>
       <p>Hello!, my name is <b>Abdurrahman Rahim</b>. Currently taking my Bachelor's degree in <b>Computer Science</b> at Alauddin Islamic State University, Makassar. Based on my interest in Data, i would like to pursue my career as a <b>Data Scientist</b>.</p>
     </div>
   </section>
-  <!-- <section class="projects" id="projects">
+
+  <!-- projects -->
+  <section class="projects" id="projects">
     <div class="text">
       <h1>Projects</h1>
       <p>Here are some projects that I did in my spare time</p>
     </div>
-  </section> -->
+
+    <div class="project-container">
+      <div class="card">
+        <img src="/src/img/refor.png" alt="">
+        <div class="desc">
+        <h1>Reformatika</h1>
+        <p>Event tahunan yang diselenggarakan oleh angkatan baru mahasiswa Teknik Informatika UIN Alauddin Makassar</p>
+          <div class="go">
+          <a href="https://reformatika21.github.io/reformatika/" target="_blank">Check the Website <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contacts -->
   <section class="contacts" id="contacts">
       <h1>Contacts</h1>
       <ul>

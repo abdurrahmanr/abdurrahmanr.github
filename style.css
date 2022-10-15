@@ -34,6 +34,11 @@ nav {
     height: 70px;
 }
 
+.home img {
+    width: auto;
+    height: auto;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -43,11 +48,6 @@ nav ul {
 nav ul li {
     align-items: center;
     list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #9aa5ce;
 }
 
 .home {
@@ -82,18 +82,72 @@ nav ul li a {
 .about, .projects {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 500px;
+    height: 100vh;
     color: whitesmoke;
 }
 
-.about p {
+.text p {
     text-align: justify;
     padding: 25px 0;
     line-height: 30px;
+}
+
+.project-container {
+    display: flex;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+}
+
+.card {
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.desc {
+    width: 250px;
+    height: 250px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 75px;
+    transition: .5s;
+}
+
+.desc p {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover .desc {
+    bottom: 250px;
+    background-color: rgb(1, 11, 25, .7);
+    backdrop-filter: blur(8px);
+}
+
+.card:hover .desc p {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover .desc a {
+    visibility: visible;
+    opacity: 1;
 }
 
 .contacts {
@@ -103,10 +157,6 @@ nav ul li a {
     align-items: center;
     height: 600px;
 
-}
-
-.contacts ul li a {
-    text-decoration: none;
 }
 
 .contacts ul {
@@ -135,8 +185,8 @@ nav ul li a {
 }
 
 a {
-    margin: 10px;
-    
+    text-decoration: none;
+    color: #9aa5ce;
 }
 
 a:hover {
@@ -177,7 +227,6 @@ h1 {
 
 .nav-mobile #line3 {
     width: 10px;
-    height: 4px;
 }
 
 .nav-mobile input {
@@ -206,12 +255,7 @@ h1 {
 .nav-mobile input:checked ~ #line3{
     transform: rotate(-45deg) translate(-1px, -1px);
     width: 28px;
-    height: 3px;
 }
-
-/* .nav-mobile input:checked ~ #line3 {
-    width: 28px;
-} */
 
 .nav-mobile input:checked ~ span:nth-child(3){
     transform: scale(0);
@@ -289,4 +333,9 @@ h1 {
     .text {
         padding: 25px 10%;
     }
+
+    .about, .projects, .contacts {
+        height: 75vh;
+    }
+
 }
