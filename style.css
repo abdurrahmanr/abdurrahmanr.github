@@ -107,17 +107,19 @@ nav ul li {
     cursor: pointer;
     border-radius: 6px;
     margin: 10px;
-    width: 250px;
+    width: 400px;
     height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
+    transition: 500ms ease;
 }
 
 .desc {
-    width: 250px;
+    width: 400px;
     height: 250px;
     padding: 24px;
     box-sizing: border-box;
@@ -131,8 +133,12 @@ nav ul li {
     opacity: 0;
 }
 
+.card:hover {
+    scale: 1.05;
+}
+
 .card:hover .desc {
-    bottom: 250px;
+    bottom: 175px;
     background-color: rgb(1, 11, 25, .7);
     backdrop-filter: blur(8px);
 }
@@ -295,6 +301,18 @@ h1 {
 
     .home {
         justify-content: space-evenly;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    .desc {
+        width: 250px;
+    }
+
+    .card:hover .desc {
+        bottom: 250px;
     }
 
     .contacts ul {
