@@ -96,6 +96,8 @@ nav ul li {
 
 .project-container {
     display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .card img {
@@ -116,6 +118,14 @@ nav ul li {
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
     transition: 500ms ease;
+}
+
+.card.group4 {
+    background-color: rgb(250, 250, 250);
+}
+
+.card.group4:hover .desc {
+    bottom: 175px;
 }
 
 .desc {
@@ -281,6 +291,15 @@ h1 {
 
 @media screen and (max-width: 576px) {
 
+    .projects {
+        flex-direction: column;
+        height: 125vh;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
     nav {
         margin-left: 0px;
         justify-content:space-evenly;
@@ -349,7 +368,7 @@ h1 {
         padding: 25px 10%;
     }
 
-    .about, .projects, .contacts {
+    .about, .contacts {
         height: 75vh;
     }
 
